@@ -1,0 +1,232 @@
+/* * {
+  border: 1px solid red;
+} */
+
+.group5 {
+  margin-top: 50px;
+  padding: 50px 100px;
+  /* margin-bottom: 50px; */
+  color: white;
+}
+
+.future {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title-tag {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.grp5-width {
+  width: 25vw;
+}
+
+.title-tag-data {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.initiative h1 {
+  font-size: 50px;
+  font-family: "Rubik Vinyl", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.title-tag p {
+  font-size: 20px;
+}
+
+.title-tag-data h2 {
+  font-size: 30px;
+}
+
+.init-text {
+  font-size: 15px;
+}
+
+.tags-data-gp5 span {
+  font-size: 20px;
+  border: 1px solid white;
+  padding: 5px 15px;
+  border-radius: 15px;
+}
+
+.date-data-gp5 p {
+  font-size: 25px;
+}
+
+.arrow-data-gp5 i {
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: rgb(237, 237, 237);
+  color: black;
+}
+
+.arrow-data-gp5 {
+  text-align: end;
+}
+
+.title-tag-data:hover span {
+  background-color: yellow;
+  border: none;
+  color: black;
+}
+
+.title-tag-data:hover i {
+  rotate: -45deg;
+  border: 2px dotted black;
+  background-color: white;
+}
+
+.title-tag-img {
+  height: 180px;
+  width: 250px;
+  border-radius: 30px;
+  rotate: -10deg;
+  position: absolute;
+  right: 18%;
+  z-index: 2;
+  display: none;
+}
+
+.title-tag-img-effect {
+  height: 180px;
+  width: 250px;
+  border-radius: 30px;
+  background-color: yellow;
+  position: absolute;
+  right: 19%;
+  bottom: -50px;
+  display: none;
+}
+
+#title-tag-img1 {
+  background-image: url(image/copilot_image_1735734784135.jpeg);
+  background-size: cover;
+}
+
+#title-tag-img2 {
+  background-image: url(image/copilot_image_1735734839906.jpeg);
+  background-size: cover;
+}
+
+#title-tag-img3 {
+  background-image: url(image/copilot_image_1735734907805.jpeg);
+  background-size: cover;
+}
+
+#title-tag-img4 {
+  background-image: url(image/copilot_image_1735734960169.jpeg);
+  background-size: cover;
+}
+
+.title-tag-data:hover .title-tag-img {
+  display: inline;
+}
+
+.title-tag-data:hover .title-tag-img-effect {
+  display: inline;
+}
+
+@media (max-width: 1660px) {
+  .title-tag-img {
+    right: 11%;
+  }
+  .title-tag-img-effect {
+    right: 12%;
+  }
+  .group5 {
+    padding: 50px 80px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .future {
+    flex-direction: column;
+    text-align: center;
+  }
+  .title-tag-data h2 {
+    font-size: 20px;
+  }
+  .tags-data-gp5 span {
+    font-size: 15px;
+  }
+  .date-data-gp5 p {
+    font-size: 15px;
+  }
+  .group5 {
+    padding: 40px 40px;
+  }
+  .initiative h1 {
+    font-size: 40px;
+  }
+  .grp5-width-2 {
+    width: 30vw;
+  }
+  .grp5-width-3 {
+    width: 10vw;
+  }
+  .init-text {
+    margin-top: 10px;
+  }
+}
+@media (max-width: 630px) {
+  .group5 {
+    padding: 40px 10px;
+  }
+  .data-remove-m {
+    display: none;
+  }
+  .grp5-width-2 {
+    width: 45vw;
+  }
+  .initiative h1 {
+    font-size: 30px;
+  }
+  .init-text {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 400px) {
+  .data-remove-m1 {
+    display: none;
+  }
+  .title-tag-data {
+    margin-top: 15px;
+  }
+  .title-tag {
+    margin-bottom: 15px;
+  }
+  .group5 {
+    padding: 0px 10px;
+  }
+  .init-text {
+    margin-top: 10px;
+  }
+  .title-tag-data {
+    margin-bottom: 15px;
+  }
+}
+
+/* remove hover effect on mobile */
+@media (hover: none) {
+  .title-tag-data:hover .title-tag-img-effect {
+    display: none;
+  }
+  .title-tag-data:hover .title-tag-img {
+    display: none;
+  }
+}

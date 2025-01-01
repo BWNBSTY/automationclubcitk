@@ -1,0 +1,86 @@
+/* body {
+  padding: 0;
+  margin: 0;
+} */
+
+/* nav {
+  position: fixed;
+  width: 100%;
+  padding: 25px;
+  background-color: rgba(0, 0, 0, 0.9);
+  text-align: center;
+}
+
+a {
+  padding: 10px 15px;
+  color: #fff;
+  text-decoration: none;
+} */
+
+/* .visi-hidden-header {
+  height: 115px;
+  visibility: none;
+} */
+
+@media (min-width: 1300px) {
+  main {
+    /* margin-top: 115px; */
+    overflow-y: auto;
+    height: 100vh;
+    /* Immediately switch to the next section on scroll:  */
+    scroll-snap-type: y mandatory;
+    /* Switch to the next section only when approaching it:
+      scroll-snap-type: y proximity; */
+    /* overflow-x: hidden; */
+    overflow-x: hidden;
+    /*  */
+  }
+
+  section {
+    display: flex;
+    flex-direction: column;
+    /* align-items: ; */
+    height: 100vh;
+    /* color: #fff; */
+    /* font-size: 5rem; */
+    scroll-snap-align: center;
+    /*  */
+  }
+
+  #section2 {
+    justify-content: center;
+  }
+  #section3 {
+    justify-content: center;
+  }
+  #section4 {
+    justify-content: center;
+  }
+  #section5 {
+    justify-content: end;
+  }
+  #about {
+    justify-content: center;
+  }
+  #footer {
+    justify-content: end;
+  }
+}
+
+@media (min-width: 769px) {
+  .group2 {
+    margin-top: 115px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1025px) {
+  #section5 {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  #group2-st {
+    margin-top: 115px;
+  }
+}

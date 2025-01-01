@@ -1,0 +1,102 @@
+.group-4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+
+.group-4-box {
+  height: 23vh;
+  width: 23vw;
+  border-radius: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid white;
+}
+
+.box-st {
+  background-color: rgb(223, 225, 226);
+}
+
+.box-nd {
+  background-image: url(image/Tutorial-How-to-Automate-with-Power-Automate-Desktop_831x542.jpg);
+  background-size: cover;
+  color: white;
+}
+
+.box-th1 {
+  background-color: yellow;
+}
+
+.box-th2 {
+  background-image: url(image/img-1.jpg);
+  color: white;
+}
+
+.group-4 i {
+  font-size: 15rem;
+}
+
+.group-4 h1 {
+  font-size: 8rem;
+}
+
+@media (max-width: 1400px) {
+  .group-4-box {
+    height: 18vh;
+    width: 23vw;
+    border-radius: 70px;
+  }
+  .group-4 i {
+    font-size: 10rem;
+  }
+  .group-4 h1 {
+    font-size: 5rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  .group-4-box {
+    height: 15vh;
+    width: 25vw;
+    border-radius: 60px;
+  }
+  .group-4 {
+    padding: 50px 10px;
+  }
+  .group-4 i {
+    font-size: 8rem;
+  }
+  .group-4 h1 {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .group-4-box {
+    height: 15vh;
+    width: 25vw;
+    border-radius: 50px;
+  }
+  .group-4 i {
+    font-size: 7rem;
+  }
+  .group-4 h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .group-4-box {
+    height: 8vh;
+    width: 25vw;
+    border-radius: 30px;
+  }
+  .group-4 i {
+    font-size: 4rem;
+  }
+  .group-4 h1 {
+    font-size: 1.5rem;
+  }
+}

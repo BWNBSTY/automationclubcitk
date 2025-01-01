@@ -1,0 +1,179 @@
+.group3 {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  color: white;
+}
+
+.view-learn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.view {
+  border: 1px solid white;
+  border-radius: 30px;
+  padding: 10px 20px;
+}
+
+.view h3 {
+  font-size: 25px;
+}
+
+.st-tilt-img {
+  height: 60px;
+  width: 60px;
+  border: 1px solid black;
+  border-radius: 50%;
+  border: 1px solid yellow;
+}
+
+.group3 {
+  display: flex;
+}
+
+.tilt-img {
+  width: 25vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sent-centr {
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.learn {
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+#st {
+  margin-bottom: 10px;
+  background-image: url(image/copilot_image_1735736036923.jpeg);
+  background-size: cover;
+}
+
+#th1 {
+  margin-bottom: 10px;
+  background-image: url(image/copilot_image_1735736075227.jpeg);
+  background-size: cover;
+}
+
+#nd {
+  position: relative;
+  left: 70px;
+  background-image: url(image/copilot_image_1735736245109.jpeg);
+  background-size: cover;
+}
+
+#th2 {
+  position: relative;
+  right: 70px;
+  background-image: url(image/copilot_image_1735736285381.jpeg);
+  background-size: cover;
+}
+
+#spacing-h1 {
+  margin-top: -10px;
+}
+
+#spacing-p {
+  margin-top: 0px;
+}
+
+#spacing-p1 {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.view-learn {
+  margin-top: 20px;
+}
+
+.sent-centr h1 {
+  font-size: 50px;
+}
+
+.sent-centr p {
+  font-size: 20px;
+}
+
+.learn i {
+  font-size: 20px;
+}
+
+.learn h3 {
+  font-size: 25px;
+}
+
+.learn:hover i {
+  color: yellow;
+}
+
+@media (max-width: 1140px) {
+  .tilt-img {
+    width: 10vw;
+  }
+
+  .sent-centr {
+    width: 80vw;
+  }
+}
+
+@media (max-width: 900px) {
+  .st-tilt-img {
+    height: 40px;
+    width: 40px;
+  }
+  .sent-centr h1 {
+    font-size: 30px;
+  }
+  .sent-centr p {
+    font-size: 15px;
+  }
+  #spacing-h1 {
+    margin-top: -5px;
+  }
+  #spacing-p {
+    margin-top: 0px;
+  }
+  #spacing-p1 {
+    margin-top: 10px;
+    text-align: start;
+    margin-left: 30px;
+    margin-right: 20px;
+  }
+  .view h3 {
+    font-size: 20px;
+  }
+  #nd {
+    left: 40px;
+  }
+
+  #th2 {
+    right: 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .tilt-img {
+    display: none;
+  }
+  .view-learn {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .sent-centr {
+    width: 100vw;
+  }
+  .learn {
+    margin-left: 0;
+    margin-top: 15px;
+  }
+}

@@ -1,0 +1,128 @@
+/* body {
+  background-color: var(--lovelish);
+} */
+
+:root {
+  --lovelish: hsl(0, 0%, 18%);
+  /* --handshake: hsl(40, 100%, 66%); */
+  --handshake: hsl(205, 94%, 44%);
+  --btn2: hsl(242, 43%, 65%);
+  --btn3: hsl(160, 86%, 63%);
+}
+
+/* .main-box-j {
+  height: 100vh;
+  display: flex;
+  margin: auto;
+} */
+
+.main-box-j {
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+}
+
+/* .button-box-j {
+  height: 500px;
+  max-width: 500px;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  display: grid;
+} */
+
+/* Button 1 */
+.button-j {
+  /* height: 100px; */
+  padding: 10px 0;
+  width: 300px;
+  display: flex;
+  border-radius: 2.5rem;
+  transition: 0.5s;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  background-image: linear-gradient(
+    to right,
+    #8081cf,
+    #847dc9,
+    #8778c3,
+    #8a74bd,
+    #8d70b7,
+    #8f6db2,
+    #9169ac,
+    #9266a7,
+    #9362a1,
+    #935e9a,
+    #935b93,
+    #93578d
+  );
+  color: white;
+  animation: blurr 2s;
+  animation-iteration-count: infinite;
+  outline: none;
+  cursor: pointer;
+  border: none;
+}
+
+.button-j img {
+  margin-left: 50px;
+  transition: 0.5s;
+  width: 5.5rem;
+  height: 5.5rem;
+}
+
+@keyframes blurr {
+  0%,
+  100% {
+    box-shadow: 0 0 10px var(--handshake);
+  }
+
+  50% {
+    box-shadow: 0 0 36px var(--handshake);
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 0%;
+  }
+}
+
+.title-j {
+  font-weight: bold;
+  margin-top: 1.6rem;
+  margin-left: 7rem;
+  transition: 0.5s;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.button-j:hover .title-j {
+  transform: translateX(-140px);
+  animation: fade 0.5s;
+  opacity: 0%;
+}
+
+.button-j:hover img {
+  transform: translateX(-180px);
+}
+
+.description-j {
+  position: absolute;
+  margin-top: 1.4rem;
+  font-weight: bold;
+  line-height: 2rem;
+  font-size: 2rem;
+  font-style: italic;
+  transition: 0.5s;
+  opacity: 0%;
+  margin-left: 6rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.button-j:hover .description-j {
+  transform: translateX(70px);
+  opacity: 100%;
+}

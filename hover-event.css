@@ -1,0 +1,337 @@
+/* Effect on Hover Section */
+
+.container-h {
+  width: 100%;
+  height: 100vh;
+  /* background-color: white; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 130px;
+}
+
+.evnt-head-h1 {
+  /* margin: 30px 0; */
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 40px;
+  color: white;
+  font-family: "Rubik Vinyl", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.gallery {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-box {
+  width: 250px;
+  height: 700px;
+  margin: 10px;
+  border-radius: 50px;
+  background: url(image/boliviainteligente-i1zerxdqzPE-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  transition: width 0.5s;
+  border: 1px solid white;
+}
+
+.img-box:nth-child(2) {
+  background: url(image/mathew-schwartz-LobqNg0BWUo-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.img-box:nth-child(3) {
+  background: url(image/pexels-mikhail-nilov-9242852.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.img-box:nth-child(4) {
+  background: url(image/pngtree-exploring-the-world-of-iot-devices-and-network-connections-image_3885211.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.img-box:hover {
+  width: 500px;
+  cursor: pointer;
+}
+
+.img-box:hover #d-none {
+  display: inline;
+  background-color: yellow;
+}
+
+.img-box:hover #d-visi {
+  display: none;
+}
+
+.img-box:hover .explore {
+  width: 92%;
+  justify-content: space-between;
+}
+
+.img-box:hover .explore:hover {
+  background-color: #f2e9ff;
+}
+
+.dig-arrow i {
+  font-size: 40px;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+#d-visi {
+  rotate: -45deg;
+}
+
+#d-none {
+  display: none;
+  padding: 10px 15px;
+}
+
+.dig-arrow {
+  text-align: end;
+  padding: 20px;
+}
+
+.explore {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: white;
+  border-radius: 20px;
+  margin: 0 10px;
+  position: absolute;
+  bottom: 3%;
+  left: 10px;
+  padding: 10px 30px;
+  border: 1px solid black;
+}
+
+.explore span,
+i {
+  font-size: 30px;
+}
+
+.explore i {
+  margin-left: 30px;
+}
+
+.event {
+  color: white;
+  position: absolute;
+  bottom: 15%;
+  left: 10px;
+}
+
+.event h1 {
+  font-size: 25px;
+}
+
+.event p {
+  font-size: 11px;
+}
+
+@media (min-width: 1200px) and (max-width: 1420px) {
+  .img-box {
+    width: 200px;
+    height: 500px;
+  }
+  .event h1 {
+    font-size: 20px;
+  }
+  .explore i {
+    margin-left: 5px;
+  }
+  .explore {
+    padding: 10px 20px;
+  }
+}
+
+@media (min-width: 1060px) and (max-width: 1200px) {
+  .img-box {
+    width: 150px;
+    height: 500px;
+  }
+  .event h1 {
+    font-size: 15px;
+  }
+  .explore i {
+    margin-left: 4px;
+  }
+  .explore {
+    margin-left: 0;
+    padding: 10px 5px;
+  }
+}
+
+@media (min-width: 910px) and (max-width: 1060px) {
+  .img-box {
+    width: 100px;
+    height: 500px;
+  }
+  .event h1 {
+    font-size: 10px;
+  }
+  .event p {
+    font-size: 10px;
+  }
+  .explore span {
+    display: none;
+  }
+  .explore {
+    margin-left: 0px;
+    padding: 10px 15px;
+  }
+  .img-box:hover .explore span {
+    display: inline;
+  }
+  .img-box:hover .explore {
+    padding: 10px 30px;
+  }
+}
+
+/* only for mobile view */
+
+@media (min-width: 910px) {
+  .container-m {
+    display: none;
+  }
+
+  .container-h {
+    display: inline;
+  }
+  .d-none-non-mobile {
+    display: none;
+  }
+}
+
+@media (max-width: 910px) {
+  .evnt-head-h1 {
+    font-size: 30px;
+    font-family: "Rubik Vinyl", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .container-h {
+    display: none;
+  }
+
+  .container-m {
+    display: inline;
+    width: 100vw;
+    /* height: 100vh; */
+    /* background-color: #f2e9ff; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  .gallery_m {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .img-box-m {
+    width: 350px;
+    height: 600px;
+    margin: 10px;
+    border-radius: 50px;
+    position: relative;
+    transition: width 0.5s;
+  }
+
+  #one {
+    background: url(image/boliviainteligente-i1zerxdqzPE-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+
+  #two {
+    background: url(image/mathew-schwartz-LobqNg0BWUo-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+
+  #three {
+    background: url(image/pexels-mikhail-nilov-9242852.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+
+  #four {
+    background: url(image/pngtree-exploring-the-world-of-iot-devices-and-network-connections-image_3885211.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+
+  .explore-m {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 20px;
+    margin: 0 5px;
+    position: absolute;
+    bottom: 3%;
+    left: 10px;
+    padding: 10px 30px;
+    width: 92%;
+  }
+
+  .explore-m span,
+  i {
+    font-size: 30px;
+  }
+
+  .explore-m i {
+    margin-left: 30px;
+  }
+
+  .event-m {
+    color: white;
+    position: absolute;
+    bottom: 15%;
+    left: 10px;
+  }
+
+  .event-m h1 {
+    font-size: 25px;
+  }
+
+  .event-m p {
+    font-size: 11px;
+  }
+
+  .arrow {
+    background-color: yellow;
+    padding: 10px;
+    border-radius: 50%;
+  }
+
+  .previous {
+    position: relative;
+    left: 60px;
+    z-index: 1;
+  }
+
+  .next {
+    position: relative;
+    right: 60px;
+    z-index: 1;
+  }
+}
+
+@media (max-width: 1300px) {
+  #mobile-evntssss {
+    margin-top: 50px;
+  }
+}
